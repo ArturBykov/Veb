@@ -1,0 +1,343 @@
+@charset "utf-8";
+{
+    margin: 0;/* отступ сверху*/
+    padding: 0;/* отступ с боку*/
+    outline: none;/* подсветка при наведении */
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #333;
+    font-family: "Segoe UI", Arial, sans-serif;/* Похожий на предыдущий шрифт */
+    font-size: 1en;
+    line-height: 100%;
+    float: left;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+a{
+    color: bisque; 
+    text-decoration: none;/* Подчеркивание текста */
+
+}
+
+a:hover{
+    color: aqua;/* Изменение цвета при наведении */   
+}
+
+a, a:hover{
+    /* Медлинное изменение цвета */
+     transition: all.6s ease;
+}
+
+.clear{
+    clear: both;/* отделение */ 
+}
+
+
+header{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    border-bottom-color: black;
+    border-bottom:  2x solid silver;
+}
+
+header #logo{
+    width: 60%;
+    float: left;
+    
+    color: #939393;
+    font-size: 2em;
+    font-family: Times New Roman, sans-serif;
+}
+header #logo a{
+    color: #939393;
+    font-size: 2em;
+    font-family: Times New Roman, sans-serif;
+}
+
+header #menu div:hover{
+    background-color:antiquewhite;
+    color: coral;
+}
+
+header #logo span{
+    color: red;
+    
+} 
+
+header #menu{
+    width: 20%;
+    float: left;
+}
+
+header #menu div{
+    float: left;
+    padding: 5px;
+    margin-right: 2%;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    color: blue;
+}
+
+header #reg{
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+footer {
+    width: 100%;
+    background-color:aquamarine;
+    float: left;
+    padding: 1%;
+    border-top: 2px soild silver;
+    margin-top: 10px;
+    
+}
+
+footer #social{
+    float: left;
+    width: 50%;
+}
+
+footer #social img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+footer #right{
+    margin-top: 25px;
+    float: right;
+    font-size: 1.1em;
+}
+                    /*стили для All right */
+
+#wrapper {
+    margin-top: 40px;
+    width: 95%;
+    margin-left: 5%;
+    float: left;
+    
+}
+
+#wrapper #leftCol{
+    width: 60%;
+    margin-top: 10%;
+    float: left;
+}
+
+
+
+#wrapper #rightCol{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: right;
+    background-color: yellow;
+}
+
+#wrapper #rightCol.banner{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    border: 2px solid silver; 
+    box-sizing: border-box;
+}                                                     
+
+#wrapper #leftCol #bigArticle{
+    width: 98%;
+    padding: 1%;
+    background-color:aliceblue;
+    border-radius: 20px;
+}
+
+#wrapper #leftCol #alltext{
+    
+    margin-top: 20%;
+}
+
+
+#wrapper #leftCol #bigArticle img{
+    width: 80%;
+    padding: 10%;
+    border-radius: 200px;
+}
+
+#wrapper #leftCol #iv {
+    width: 15%;
+    border-left: 30px;
+    background-color:darkgray;
+
+}
+
+#wrapper #leftCol #iv p{
+    float: left;
+    padding: 2%;
+    border-radius: 10px;
+    color: red;
+}
+
+#wrapper #leftCol .article{
+    width: 40%;
+    margin-left: 5%;
+    padding: 1%;
+    float: left;
+
+}
+
+#wrapper #leftCol #bom p{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: 1px solid silver;
+    background-color: #f4f4f4;
+}
+                                                            
+
+#wrapper #leftCol input {
+    
+    width: 40%;
+    margin-left: 30%;
+    float: left;
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    color: #30f4e5;
+    margin-bottom: 10px;
+    font-size: 1.2em;   
+}
+
+#wrapper #leftCol input:focus {
+    border: 2px solid #f78080;    
+}
+
+#wrapper #leftCol input#done:hover {
+    border: 2px solid #f78080;
+    cursor: pointer;
+}
+
+#wrapper #leftCol textarea {
+    
+    width: 40%;
+    height: 40px;
+    margin-left: 30%;
+    /*border-top: 2%;*/
+    float: left;
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    color: #30f4e5;
+    font-weight: bold;   
+}
+
+#wrapper #leftCol #messageShow{
+    font-size: 1.2em;
+    float: left;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/*    modal   */
+
+#modalWindow{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, .7);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    /*display: none;*/
+    pointer-events: none;
+}
+
+#modalWindow:target {
+    
+    pointer-events: auto;
+    display: block;
+
+}
+
+.button {
+    
+    background: #26a8b0;
+    color: #fff;
+    text-decoration: none;
+    
+    margin: 2% auto;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.windowi{
+    
+    width: 500px;
+    height: 300px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 30% auto;
+    padding: 10px;
+        
+}
+
+.close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background: #fff;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+}
+
+.close:hover {
+    
+    background: #000;
+    color: #fff;
+    
+}
+
+-webkit-animation: animationModal .5s;
+
+@-webkit-keyfranes animationModal{
+    8% {
+        -webkit-transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
